@@ -1,0 +1,16 @@
+<div class="container">
+  <form (ngSubmit)="processForm()">
+      <div class="form-group">
+        <input type="text" name="id" class="input-small" (ngModel)="user.id" >
+      </div>
+      <div class="form-group">
+        <label for="username">First Name</label>
+          <input type="text" name="username" class="input-small" [(ngModel)]="user.username">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" class="input-small" [(ngModel)]="user.lastname">
+            </div>
+            <input type="submit" value="Save" class="btn btn-success">
+  </form>
+</div>
