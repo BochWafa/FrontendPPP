@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "8.9.4"
+
+branches:
+  only:
+    - master
+before_script:
+  - npm install -g @angular/cli
+script:
+  - ng build --prod
+deploy:
+  provider: heroku
+  api_key: 828fd708-9607-4fad-909d-0ba9a42f7c85
+  app: frontendppp
