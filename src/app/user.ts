@@ -1,6 +1,6 @@
 export class User {
-    id:Number;
-    firstname:string;
-    lastname:string;
+   public id:Number;
+   public firstname:string;
+   public lastname:string;
     
 }
