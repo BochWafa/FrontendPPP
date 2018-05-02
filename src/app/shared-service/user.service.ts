@@ -7,7 +7,7 @@ import 'rxjs/add/observable/throw';
 import {User} from '../user';
 @Injectable()
 export class UserService {
-private baseUrl='http://localhost:8080/api';
+private baseUrl='https://backendspringboot.herokuapp.com/api';
 private headers= new Headers({'content-Type':'application/json'});
 private options= new RequestOptions({headers:this.headers});
 private user= new User();
