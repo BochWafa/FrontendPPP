@@ -15,6 +15,7 @@ public user:User;
   ngOnInit() {
     this.user=this._userService.getter();
   }
+
 processForm(){
 if(this.user.id==undefined){
   this._userService.createUser(this.user).subscribe((user)=>{
@@ -28,6 +29,6 @@ else{
 }
 
 
-
+return 0;
 }
 }
