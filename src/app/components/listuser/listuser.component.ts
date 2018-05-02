@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./listuser.component.css']
 })
 export class ListuserComponent implements OnInit {
-private users:User[];
+public users:User[];
   constructor(private _userService:UserService,private _router:Router) { }
 
   ngOnInit() {
@@ -24,9 +24,8 @@ this.users.splice(this.users.indexOf(user),1);},
 updateUser(user){
 this._userService.setter(user);
 }
-newUser($scope){
+newUser(){
   let user= new User();
   this._userService.setter(user);
-  $scope.$digest();
 }
 }
